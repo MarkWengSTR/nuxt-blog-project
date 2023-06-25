@@ -1,6 +1,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: "static",
+  target: "server",
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -27,7 +27,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ["@nuxt/postcss8", "@nuxt/image"],
+  buildModules: ["@nuxt/postcss8", "@nuxt/image", "@nuxtjs/axios"],
   vite: {
     /* options for vite */
     // ssr: true // enable unstable server-side rendering for development (false by default)
@@ -38,7 +38,7 @@ export default {
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxt/content", "@nuxtjs/svg", "@nuxt/image"],
+  modules: ["@nuxt/content", "@nuxtjs/svg", "@nuxt/image", "@nuxtjs/axios"],
   svg: {
     vueSvgLoader: {
       // vue-svg-loader options
@@ -49,6 +49,20 @@ export default {
     fileLoader: {
       // file-loader options
     },
+  },
+
+  serverMiddleware: {
+    '/api': '~/api'
+  },
+
+  axios: {
+    baseURL: 'http://localhost:3000'
+  },
+
+  publicRuntimeConfig: {
+    axios: {
+      browserBaseURL: 'http://localhost:3000'
+    }
   },
 
   content: {

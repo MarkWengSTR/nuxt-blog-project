@@ -8,6 +8,7 @@
         <AuthorIntro></AuthorIntro>
         <Expertise></Expertise>
         <TimeLine></TimeLine>
+        <button @click="showMessageFromBackend">show message from backend</button>
       </div>
     </div>
   </div>
@@ -34,6 +35,16 @@ export default {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
+  methods: {
+    async showMessageFromBackend () {
+      try {
+        const response = await this.$axios.get('/api/test')
+        console.log(response.data);
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  }
 };
 </script>
 

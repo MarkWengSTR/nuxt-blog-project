@@ -1,6 +1,6 @@
 const menu = [
   { name: "Home", path: "/" },
-  { name: "Projects", path: "/projects" },
+  { name: "calculator", path: "/calculator" },
   { name: "Blog", path: "/blog" },
 ];
 
