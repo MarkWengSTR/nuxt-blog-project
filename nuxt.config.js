@@ -56,12 +56,12 @@ export default {
   },
 
   axios: {
-    baseURL: 'http://localhost:3000'
+    baseURL: 'http://localhost:8000'
   },
 
   publicRuntimeConfig: {
     axios: {
-      browserBaseURL: 'http://localhost:3000'
+      browserBaseURL: 'http://localhost:8000'
     }
   },
 
