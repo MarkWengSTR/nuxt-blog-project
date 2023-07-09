@@ -208,8 +208,7 @@ async function getABBAuth() {
     })
 }
 
-// listen on port
-const port = process.env.PORT || 8000;
-app.listen(port, () => {
-  console.log(`listening on ${port}`);
-});
+export default {
+  path: '/api',
+  handler: app
+}

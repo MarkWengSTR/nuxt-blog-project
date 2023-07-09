@@ -56,7 +56,7 @@ export default {
   },
 
   axios: {
-    baseURL: 'http://localhost:8000'
+    baseURL: 'https://worklinebot.serveblog.net'
   },
 
   publicRuntimeConfig: {
