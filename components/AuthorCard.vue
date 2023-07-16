@@ -13,9 +13,6 @@
         >
           {{ siteMetadata.author }}
         </h1>
-        <div class="md:text-lg text-gray-600 dark:text-blue-100">
-          {{ siteMetadata.position }}
-        </div>
         <a
           :href="`mailto:${siteMetadata.email}`"
           class="text-gray-600 md:hidden mt-1 dark:text-blue-100"

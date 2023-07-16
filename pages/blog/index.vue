@@ -6,9 +6,6 @@
       >
         Blog
       </h1>
-      <p class="text-lg text-slate-700 dark:text-slate-400">
-        All the latest Tailwind CSS news, straight from the&nbsp;team.
-      </p>
     </header>
     <div class="space-y-16 mx-auto max-w-7xl">
       <blog-item
@@ -45,14 +42,14 @@ export default {
     };
   },
   head: {
-    title: "Md Solaiman | Blogs",
+    title: "Mark Weng | Blogs",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: "Its Solaiman's Pen and Paper to write ",
+        content: "Its Mark's Pen and Paper to write ",
       },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],

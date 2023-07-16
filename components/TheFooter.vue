@@ -41,11 +41,11 @@
         /></a>
       </div>
       <div class="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
-        <div>Copyright © {{ new Date().getFullYear() }}</div>
-        <div>•</div>
-        <a href="/"
-          >{{ siteMetadata.author }}'s blog - {{ siteMetadata.slogan }}</a
-        >
+        <div>
+          © Copyright {{ new Date().getFullYear() }} ※本站採用
+          <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/tw/">CC授權</a>
+          歡迎引用與介紹，並註明出處，謝謝
+        </div>
       </div>
       <div class="mb-8 text-sm text-gray-500 dark:text-gray-400">
         <a
@@ -54,20 +54,17 @@
           href="https://github.com/mdrathik/tailwind-nuxtjs-starter-blog"
         ></a>
       </div>
-      <BuyMeACoffee></BuyMeACoffee>
     </div>
   </footer>
 </template>
 
 <script>
 import siteMetaInfo from "@/data/sitemetainfo";
-import BuyMeACoffee from "./BuyMeACoffee.vue";
 export default {
   data() {
     return {
       siteMetadata: siteMetaInfo,
     };
   },
-  components: { BuyMeACoffee },
 };
 </script>

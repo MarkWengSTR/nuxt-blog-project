@@ -55,15 +55,15 @@ export default {
     '/api': '~/api'
   },
 
-  axios: {
-    baseURL: 'http://localhost:8000'
-  },
+  // axios: {
+  //   baseURL: 'http://localhost:8000'
+  // },
 
-  publicRuntimeConfig: {
-    axios: {
-      browserBaseURL: 'http://localhost:8000'
-    }
-  },
+  // publicRuntimeConfig: {
+  //   axios: {
+  //     browserBaseURL: 'http://localhost:6000'
+  //   }
+  // },
 
   content: {
     liveEdit: false,
