@@ -212,8 +212,3 @@ export default {
   path: '/api',
   handler: app
 }
-// // listen on port
-// const port = process.env.PORT || 6000;
-// app.listen(port, () => {
-//   console.log(`listening on ${port}`);
-// });
